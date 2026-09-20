@@ -4,7 +4,7 @@ A small web app for keeping track of CAS (Creativity, Activity, Service) across 
 IB Diploma Programme. It runs in the browser, works with no internet connection, and keeps everything
 on your own device.
 
-**Open it here:** https://YOUR-USERNAME.github.io/cas-tracker/
+**Open it here:** https://haywoodkawai.github.io/CAS-IBDP-Tracker/
 
 ![The overview page: a coverage band across the whole programme, a ring chart of strand balance and a week-by-week countdown](screenshot.png)
 
