@@ -1,6 +1,6 @@
 /* CAS Tracker service worker: caches the app so it opens with no connection.
    Change VERSION whenever you upload a new index.html so devices pick it up. */
-const VERSION = "cas-tracker-v7";
+const VERSION = "cas-tracker-v8";
 const FILES = ["./", "./index.html", "./manifest.webmanifest", "./icon-192.png", "./icon-512.png", "./icon-maskable-512.png"];
 
 self.addEventListener("install", e => {

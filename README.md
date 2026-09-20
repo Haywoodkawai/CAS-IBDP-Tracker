@@ -4,9 +4,15 @@ A small web app for keeping track of CAS (Creativity, Activity, Service) across 
 IB Diploma Programme. It runs in the browser, works with no internet connection, and keeps everything
 on your own device.
 
-**Open it here:** https://haywoodkawai.github.io/CAS-IBDP-Tracker/
+**Open it here:** https://YOUR-USERNAME.github.io/cas-tracker/
 
-![The overview page: a coverage band across the whole programme, a ring chart of strand balance and a week-by-week countdown](screenshot.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="screenshot-dark.png">
+  <img src="screenshot.png" alt="The overview page: a coverage band across the whole programme, a ring chart of strand balance and a week-by-week countdown">
+</picture>
+
+The tracker follows your device's light or dark mode (change it under Settings > Appearance). The
+picture shows example activities; yours starts empty.
 
 ## Why it exists
 
@@ -34,7 +40,7 @@ there is still time.
 - **Countdown to the end of IBDP**, drawn as one square per week.
 - **Learning outcomes** at a glance, including any that no activity covers yet.
 - **Backup and restore** to a single file, a spreadsheet (CSV) export of all entries, and a print view.
-- Light and dark mode.
+- A light look by default, with dark mode or "match device" under Settings.
 
 ## Using it
 
@@ -46,6 +52,20 @@ there is still time.
 **Install it like an app.** In Chrome or Edge, use the install icon in the address bar. On an iPhone or
 iPad, use Share, then Add to Home Screen. After the first visit it opens and saves without a connection.
 
+## Download your own copy
+
+You do not have to use the link above. Anyone can take a copy that is fully theirs.
+
+- **One file, no setup.** Open the tracker, go to **Settings > Get your own copy** and press
+  "Download the app file". You get `cas-tracker.html`. Double-click it on any computer and it runs,
+  offline, with nothing to install.
+- **The full set of files.** On this page press the green **Code** button, then **Download ZIP**, and unzip it.
+  Use this if you want to put the tracker online under your own address (see "Host your own copy" below).
+- **Your own repository.** Press **Fork** at the top of this page to get a copy on your GitHub account
+  that you can change however you like.
+
+Every copy starts empty. A downloaded copy never contains anyone's activities, feedback or photos.
+
 ## Your data and privacy
 
 - Nothing you enter is sent anywhere. There is no account, no server and no tracking.
@@ -55,11 +75,25 @@ iPad, use Share, then Add to Home Screen. After the first visit it opens and sav
   (photos included), and **Settings > Restore from backup** to load it on another device.
 - Clearing the browser's site data erases the record, so download a backup regularly.
 
+## Get your own copy
+
+You do not have to use the link above. Pick whichever suits you:
+
+- **One file, no website.** In the app, go to **Settings > Get your own copy > Download the app as one
+  file**. Keep `cas-tracker.html` anywhere on your computer and double-click it. It works offline.
+- **All the files.** On this page click the green **Code** button, then **Download ZIP**. The same
+  download is offered inside the app under Settings.
+- **Your own repository.** Click **Fork** at the top of this page to copy everything into your own
+  GitHub account, then host it as described below.
+
+Every copy starts empty and keeps its own data. To move a record between copies, use
+**Settings > Download backup** in one and **Restore from backup** in the other.
+
 ## Host your own copy
 
 There is no build step and nothing to install.
 
-1. Download or fork this repository.
+1. Download or fork this repository (see above).
 2. Upload the files to any static web host. For GitHub Pages: **Settings > Pages**, source
    "Deploy from a branch", branch `main`, folder `/ (root)`.
 3. Open the address GitHub gives you.
@@ -67,8 +101,7 @@ There is no build step and nothing to install.
 It also runs with no hosting at all: download the files and double-click `index.html`. Installing it as
 an app needs the hosted version.
 
-If you change `index.html`, also change `VERSION` in `sw.js` (for example from `cas-tracker-v7` to
-`cas-tracker-v8`) so devices that already saved the old copy fetch the new one. Saved data is not affected.
+If you change `index.html`, also change `VERSION` in `sw.js` (for example from `cas-tracker-v8` to `cas-tracker-v9`) so devices that already saved the old copy fetch the new one. Saved data is not affected.
 
 ## How gaps and balance are worked out
 
@@ -89,7 +122,7 @@ If you change `index.html`, also change `VERSION` in `sw.js` (for example from `
 | `sw.js` | Service worker that stores the app on the device for offline use |
 | `manifest.webmanifest` | Name, colours and icons used when the app is installed |
 | `icon-192.png`, `icon-512.png`, `icon-maskable-512.png` | App icons |
-| `screenshot.png` | The picture shown in this README |
+| `screenshot.png`, `screenshot-dark.png` | The pictures shown in this README (light and dark mode) |
 
 Plain HTML, CSS and JavaScript with no frameworks or external libraries. Records are kept in
 `localStorage`; photos are resized in the browser (longest side 1600 px) and kept in IndexedDB.
@@ -99,7 +132,8 @@ Plain HTML, CSS and JavaScript with no frameworks or external libraries. Records
 - This is an independent tool. It is not affiliated with or endorsed by the International Baccalaureate,
   and it does not replace ManageBac or whatever system your school uses for official CAS records.
 - iPhone photos in HEIC format may not open in every browser. If one is refused, share it as JPG first.
-- The hosted site and a double-clicked `index.html` keep separate data.
+- The hosted site and a downloaded copy opened from your computer keep separate data. Move a record
+  between them with Download backup and Restore from backup.
 
 ## Fonts
 
