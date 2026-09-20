@@ -8,11 +8,6 @@ on your own device.
 
 ![The overview page in the built-in example: a coverage band across the whole programme, a ring chart of strand balance and a week-by-week countdown](screenshot.png)
 
-Both pictures on this page are taken straight from the app in this repository. The one above is the
-built-in example, which anyone can open with **See an example**. It is view-only and saves nothing.
-The one below is what you see the first time you open the tracker: empty, waiting for your dates.
-
-![First open: the form for your name, CAS dates and IBDP end date above an empty coverage band](screenshot-first-open.png)
 
 ## Why it exists
 
